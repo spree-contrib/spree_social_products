@@ -1,3 +1,5 @@
-Spree::Core::Engine.routes.draw do
-  # Add your extension routes here
+Spree::Core::Engine.routes.append do
+  namespace :admin do
+    resource :social, :only => [:edit, :update], :controller => "social"
+  end
 end
