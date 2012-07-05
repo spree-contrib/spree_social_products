@@ -2,4 +2,5 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  social_sharing_buttons: "Social Sharing Buttons"
+  social_sharing_buttons_description: "Add social sharing buttons to product pages"
