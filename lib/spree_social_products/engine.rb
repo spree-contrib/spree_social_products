@@ -1,7 +1,6 @@
 module SpreeSocialProducts
   class Engine < Rails::Engine
     engine_name 'spree_social_products'
-    isolate_namespace Spree
 
     config.autoload_paths += %W(#{config.root}/lib)
 
