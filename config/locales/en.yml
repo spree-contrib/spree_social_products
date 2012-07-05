@@ -5,3 +5,4 @@ en:
   social_sharing_buttons: "Social Sharing Settings"
   social_sharing_buttons_description: "Add social sharing buttons to product pages"
   social_sharing_settings_description: "Enable or disable sharing to these networks on product pages"
+  social_sharing_settings_updated: "Sharing settings have been successfully updated."
