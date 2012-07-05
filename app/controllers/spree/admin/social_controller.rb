@@ -14,7 +14,7 @@ module Spree
           end
         end
 
-        redirect_to main_app.edit_spree_admin_social_path, :notice => "Sharing settings have been successfully updated."
+        redirect_to edit_admin_social_path, :notice => "Sharing settings have been successfully updated."
       end
     end
   end
