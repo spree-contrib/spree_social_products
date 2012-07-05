@@ -1,24 +1,34 @@
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '464231366924899', // App ID
-      channelUrl : '//www.spreeworks.com/channel.html', // Channel File
-      status     : true, // check login status
-      cookie     : true, // enable cookies to allow the server to access the session
-      xfbml      : true  // parse XFBML
-    });
+<% unless Spree::Config.facebook_app_id.nil? %>
+  <% content_for :head do %>
+    <meta property="og:title" content="<%= @product.name %>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="<%= product_url(@product) %>" />
+    <meta property="og:description" content="<%= @product.description %>" />
+    <meta property="fb:app_id" content="<%= Spree::Config.facebook_app_id %>" />
+  <% end %>
 
-    // Additional initialization code here
-  };
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : "<%= Spree::Config.facebook_app_id %>", // App ID
+        channelUrl : '//www.spreeworks.com/channel.html', // Channel File
+        status     : true, // check login status
+        cookie     : true, // enable cookies to allow the server to access the session
+        xfbml      : true  // parse XFBML
+      });
 
-  // Load the SDK Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document));
-</script>
-<div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
+      // Additional initialization code here
+    };
+
+    // Load the SDK Asynchronously
+    (function(d){
+       var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement('script'); js.id = id; js.async = true;
+       js.src = "//connect.facebook.net/en_US/all.js";
+       ref.parentNode.insertBefore(js, ref);
+     }(document));
+  </script>
+  <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
+<% end %>
