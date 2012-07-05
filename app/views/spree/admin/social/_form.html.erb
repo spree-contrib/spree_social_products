@@ -1,0 +1,50 @@
+<%= form_tag admin_social_path, :method => :put do %>
+  <ul class="social_list">
+    <li>
+      <%= image_tag 'social/twitter_16.png' %>
+      <%= label_tag 'social[twitter]', 'Twitter', :class => 'first' %>
+      <%= hidden_field_tag 'social[twitter]', '0' %>
+      <%= check_box_tag 'social[twitter]', '1', Spree::Config.twitter_button %>
+    </li>
+    <li>
+      <%= image_tag 'social/facebook_16.png' %>
+      <%= label_tag 'social[facebook]', 'Facebook' %>
+      <%= hidden_field_tag 'social[facebook]', '0' %>
+      <%= check_box_tag 'social[facebook]', '1', Spree::Config.facebook_button %>
+    </li>
+    <li>
+      <%= image_tag 'social/pinterest_16.png' %>
+      <%= label_tag 'social[pinterest]', 'Pinterest' %>
+      <%= hidden_field_tag 'social[pinterest]', '0' %>
+      <%= check_box_tag 'social[pinterest]', '1', Spree::Config.pinterest_button %>
+    </li>
+    <li>
+      <%= image_tag 'social/google_plus_16.png' %>
+      <%= label_tag 'social[gplus]', 'Google Plus' %>
+      <%= hidden_field_tag 'social[gplus]', '0' %>
+      <%= check_box_tag 'social[gplus]', '1', Spree::Config.gplus_button %>
+    </li>
+    <li>
+      <%= image_tag 'social/delicious_16.png' %>
+      <%= label_tag 'social[delicious]', 'Delicious' %>
+      <%= hidden_field_tag 'social[delicious]', '0' %>
+      <%= check_box_tag 'social[delicious]', '1', Spree::Config.delicious_button %>
+    </li>
+    <li>
+      <%= image_tag 'social/reddit_16.png' %>
+      <%= label_tag 'social[reddit]', 'Reddit' %>
+      <%= hidden_field_tag 'social[reddit]', '0' %>
+      <%= check_box_tag 'social[reddit]', '1', Spree::Config.reddit_button %>
+    </li>
+    <li>
+      <%= image_tag 'social/tumblr_16.png' %>
+      <%= label_tag 'social[tumblr]', 'Tumblr' %>
+      <%= hidden_field_tag 'social[tumblr]', '0' %>
+      <%= check_box_tag 'social[tumblr]', '1', Spree::Config.tumblr_button %>
+    </li>
+  </ul>
+
+  <div id="social_actions">
+    <%= submit_tag 'Update' %>
+  </div>
+<% end %>
