@@ -5,7 +5,7 @@ A Spree extension that allows you to add social network sharing buttons (e.g. th
 
 There is some default styling that works well with the default spree theme, but this can be overrided.
 
-![Screenshot](http://f.cl.ly/items/283X2G2X371o1I1j0M3M/spree_social_products.png)
+![Screenshot](http://i.minus.com/iPkrAfsR0nphT.png)
 
 
 Installation	
