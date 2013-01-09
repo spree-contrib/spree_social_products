@@ -32,5 +32,7 @@
        ref.parentNode.insertBefore(js, ref);
      }(document));
   </script>
-  <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
+  <div class="fb-like" data-send="<%= Spree::Config.facebook_send_button %>" data-width="450" data-show-faces="<%= Spree::Config.facebook_show_faces %>"
+    data-layout="<%= Spree::Config.facebook_layout %>" data-colorscheme="<%= Spree::Config.facebook_color_scheme %>"
+    data-action="<%= Spree::Config.facebook_verb_to_display %>"></div>
 <% end %>
