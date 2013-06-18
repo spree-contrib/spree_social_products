@@ -2,7 +2,7 @@
   <% content_for :head do %>
     <meta property="og:title" content="<%= @product.name %>" />
     <meta property="og:type" content="product" />
-    <meta property="og:url" content="<%= product_url(@product) %>" />
+    <meta property="og:url" content="<%= spree.product_url(@product) %>" />
     <meta property="og:description" content="<%= @product.description %>" />
     <% @product.images.each do |img| %>
     <meta property="og:image" content="<%= absolute_image_url(img.attachment.url) %>" />
