@@ -1,1 +1,5 @@
-<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+<%= link_to 'http://www.tumblr.com/share/link?' + {url: spree.product_url(@product), name: @product.name, description: @product.description}.to_param, title: 'Share on Tumblr', class: 'tumblr-share' do %>
+  Share on Tumblr
+<% end %>
+
+<script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
