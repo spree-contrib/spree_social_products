@@ -6,3 +6,11 @@ en:
     social_sharing_buttons_description: "Add social sharing buttons to product pages"
     social_sharing_settings_description: "Enable or disable sharing to these networks on product pages"
     social_sharing_settings_updated: "Sharing settings have been successfully updated."
+    social:
+      products:
+        facebook_layout: Button type
+        facebook_id: Facebook Api ID
+        facebook_show_faces: Show Faces Facebook
+        facebook_verb_to_display: Verb to Display
+        facebook_color_scheme: Color Scheme
+        facebook_send_button: Share button
