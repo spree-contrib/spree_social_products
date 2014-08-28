@@ -11,6 +11,7 @@
       <%= label_tag 'social[facebook]', 'Facebook' %>
       <%= hidden_field_tag 'social[facebook]', '0' %>
       <%= check_box_tag 'social[facebook]', '1', Spree::Config.facebook_button %>
+      <%= render 'facebook_options'%>
     </li>
     <li>
       <%= image_tag 'social/pinterest_16.png' %>
@@ -48,3 +49,24 @@
     <%= submit_tag 'Update' %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+  function checked() {
+    if ($("input[type=checkbox]#social_facebook").get(0).checked) {
+      $("#facebook_options").show();
+    } else {
+      $("#facebook_options").hide();
+    }
+  }
+  $(document).ready(function() {
+    checked();
+    $("input[type=checkbox]#social_facebook").on('change', function() {
+      checked();
+    });
+  });
+</script>
+<style>
+  #facebook_options {
+    display:none;
+  }
+</style>
