@@ -1,0 +1,16 @@
+---
+es:
+  spree:
+    bookmark_or_share_this: MARCADOR O COMPARTE ESTO
+    social_sharing_buttons: Configuraciones de compartir
+    social_sharing_buttons_description: Agregar botones de compartir en las páginas de los productos
+    social_sharing_settings_description: Activar o desactivar compartir en estas redes en las páginas de los productos
+    social_sharing_settings_updated: Configuraciones de compartir ha sido actualizado correctamente
+    social:
+      products:
+        facebook_layout: Tipo de botón
+        facebook_id: Facebook App ID
+        facebook_show_faces: Mostrar rostros
+        facebook_verb_to_display: Verbo para mostrar
+        facebook_color_scheme: Esquema de colores
+        facebook_send_button: Botón Enviar
