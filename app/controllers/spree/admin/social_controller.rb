@@ -20,7 +20,7 @@ module Spree
           Spree::Config.facebook_verb_to_display = params[:facebook_options][:facebook_verb_to_display]
           Spree::Config.facebook_color_scheme    = params[:facebook_options][:facebook_color_scheme]
           Spree::Config.facebook_send_button     = params[:facebook_options][:facebook_send_button]
-    		end
+        end
 
         redirect_to edit_admin_social_path, notice: Spree.t(:social_sharing_settings_updated)
       end

@@ -9,7 +9,7 @@
 	</tr>
 	<tr>
 		<th><%= label_tag Spree.t 'social.products.facebook_show_faces' %></th>
-		<td><%= check_box_tag 'facebook_options[facebook_show_faces]', false, Spree::Config.facebook_show_faces %></td>
+		<td><%= check_box_tag 'facebook_options[facebook_show_faces]', '1', Spree::Config.facebook_show_faces %></td>
 	</tr>
 	<tr>
 		<th><%= label_tag Spree.t 'social.products.facebook_verb_to_display' %></th>
@@ -21,6 +21,6 @@
 	</tr>
 	<tr>
 		<th><%= label_tag Spree.t 'social.products.facebook_send_button' %></th>
-		<td><%= check_box_tag 'facebook_options[facebook_send_button]', false, Spree::Config.facebook_send_button %></td>
+		<td><%= check_box_tag 'facebook_options[facebook_send_button]', '1', Spree::Config.facebook_send_button %></td>
 	</tr>
 </table>
