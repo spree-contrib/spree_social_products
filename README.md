@@ -8,13 +8,13 @@ There is some default styling that works well with the default spree theme, but 
 ![Screenshot](http://i.minus.com/iPkrAfsR0nphT.png)
 
 
-Installation	
+Installation
 =======
 
 Add this extension to your Gemfile:
 
 ```ruby
-gem "spree_social_products", :git => "git://github.com/spree/spree_social_products.git"
+gem 'spree_social_products', github: 'spree-contrib/spree_social_products', branch: 'master'
 ```
 
 Then run:
@@ -54,4 +54,4 @@ Spree::Config.facebook_send_button = false # true
 
 You may refer to https://developers.facebook.com/docs/reference/plugins/like/ to preview the looks of different settings.
 
-Copyright (c) 2012-2013 John Dyer, released under the New BSD License
+Copyright (c) 2012-2014 John Dyer, and contributors, released under the New BSD License
