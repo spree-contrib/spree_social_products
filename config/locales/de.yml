@@ -1,9 +1,8 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
+---
 de:
-  bookmark_or_share_this: "Diese Produkt merken oder teilen."
-  social_sharing_buttons: "Einstellungen Soziale Dienste"
-  social_sharing_buttons_description: "Füge teilen Buttons zur Produktseite hinzu"
-  social_sharing_settings_description: "Aktiviere oder Deaktiviere das teilen in diesen Sozialen Netzwerken auf der Produkt Seite"
-  social_sharing_settings_updated: "Sharing-Einstellungen wurden erfolgreich aktualisiert."
+  spree:
+    bookmark_or_share_this: "Diese Produkt merken oder teilen."
+    social_sharing_buttons: "Einstellungen Soziale Dienste"
+    social_sharing_buttons_description: "Füge teilen Buttons zur Produktseite hinzu"
+    social_sharing_settings_description: "Aktiviere oder Deaktiviere das teilen in diesen Sozialen Netzwerken auf der Produkt Seite"
+    social_sharing_settings_updated: "Sharing-Einstellungen wurden erfolgreich aktualisiert."

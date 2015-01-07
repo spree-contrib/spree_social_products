@@ -14,7 +14,7 @@ module Spree
           end
         end
 
-        redirect_to edit_admin_social_path, :notice => t("social_sharing_settings_updated")
+        redirect_to edit_admin_social_path, notice: Spree.t(:social_sharing_settings_updated)
       end
     end
   end
