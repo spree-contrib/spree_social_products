@@ -54,4 +54,4 @@ Spree::Config.facebook_send_button = false # true
 
 You may refer to https://developers.facebook.com/docs/reference/plugins/like/ to preview the looks of different settings.
 
-Copyright (c) 2012-2014 John Dyer, and contributors, released under the New BSD License
+Copyright (c) 2012-2015 John Dyer, and contributors, released under the New BSD License
