@@ -1,8 +1,8 @@
-<%= form_tag admin_social_path, :method => :put do %>
+<%= form_tag admin_social_path, method: :put do %>
   <ul class="social_list">
     <li>
       <%= image_tag 'social/twitter_16.png' %>
-      <%= label_tag 'social[twitter]', 'Twitter', :class => 'first' %>
+      <%= label_tag 'social[twitter]', 'Twitter', class: 'first' %>
       <%= hidden_field_tag 'social[twitter]', '0' %>
       <%= check_box_tag 'social[twitter]', '1', Spree::Config.twitter_button %>
     </li>

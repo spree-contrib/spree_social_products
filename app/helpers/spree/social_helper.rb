@@ -9,7 +9,7 @@ module Spree
 
       link_to("Pin It",
               "http://pinterest.com/pin/create/button/?url=#{url}&media=#{media}&description=#{description}",
-              :class => "pin-it-button",
+              class: "pin-it-button",
               "count-layout" => "none").html_safe
     end
 
