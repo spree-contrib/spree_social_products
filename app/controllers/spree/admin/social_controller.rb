@@ -1,8 +1,7 @@
 module Spree
   module Admin
-    class SocialController < Spree::Admin::BaseController
+    class SocialController < BaseController
       def edit
-
       end
 
       def update
