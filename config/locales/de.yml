@@ -6,3 +6,11 @@ de:
     social_sharing_buttons_description: "Füge teilen Buttons zur Produktseite hinzu"
     social_sharing_settings_description: "Aktiviere oder Deaktiviere das teilen in diesen Sozialen Netzwerken auf der Produkt Seite"
     social_sharing_settings_updated: "Sharing-Einstellungen wurden erfolgreich aktualisiert."
+    social:
+      products:
+        facebook_layout:
+        facebook_id:
+        facebook_show_faces:
+        facebook_verb_to_display:
+        facebook_color_scheme:
+        facebook_send_button:
