@@ -1,0 +1,16 @@
+---
+sv:
+  spree:
+    bookmark_or_share_this: BOKMÄRK ELLER DELA DETTA
+    social_sharing_buttons: Social delningsinställningar
+    social_sharing_buttons_description: Lägg till sociala dela knappar på produktsidorna
+    social_sharing_settings_description: Aktivera eller inaktivera delning till dessa nätverk på produktsidorna
+    social_sharing_settings_updated: Dela inställningarna har uppdaterats.
+    social:
+      products:
+        facebook_layout: Knapptyp
+        facebook_id: Facebook Api ID
+        facebook_show_faces: Visa ansikten för Facebook
+        facebook_verb_to_display: Verb att visa
+        facebook_color_scheme: Färgschema
+        facebook_send_button: Dela knapp
