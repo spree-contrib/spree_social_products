@@ -1,4 +1,4 @@
-<% title = Spree.t(:share_on_tumblr, scope: :social) %>
+<% title = Spree.t(:share_on_tumblr, scope: [:social, :buttons]) %>
 <%= link_to 'http://www.tumblr.com/share/link?' + { url: spree.product_url(@product), name: @product.name, description: @product.description }.to_param, title: title, class: 'tumblr-share' do %>
   <%= title %>
 <% end %>
