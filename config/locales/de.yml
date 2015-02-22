@@ -9,6 +9,11 @@ de:
       settings: Einstellungen Soziale Dienste
       service_settings: Service-Einstellungen
       facebook_settings: Facebook-Einstellungen
+      buttons:
+        delicious: Delicious
+        submit_to_reddit:
+        share_on_tumblr:
+        tweet:
       preferences:
         service_button: '%{service} Schaltfläche'
         facebook_layout: Button-Typ

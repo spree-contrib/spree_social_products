@@ -9,6 +9,11 @@ sv:
       settings: Sociala delningsinställningar
       service_settings: Serviceinställningar
       facebook_settings: Facebookinställningar
+      buttons:
+        delicious: Delicious
+        submit_to_reddit: Dela på Reddit
+        share_on_tumblr: Dela på Tumblr
+        tweet: Tvittra
       preferences:
         service_button: '%{service} knapp'
         facebook_layout: Knapptyp
