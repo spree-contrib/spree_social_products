@@ -8,6 +8,11 @@ en:
       settings: Social Sharing Settings
       service_settings: Service Settings
       facebook_settings: Facebook Settings
+      buttons:
+        delicious: Delicious
+        submit_to_reddit: Submit to Reddit
+        share_on_tumblr: Share on Tumblr
+        tweet: Tweet
       preferences:
         service_button: '%{service} Button'
         facebook_layout: Button Type

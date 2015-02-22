@@ -9,6 +9,11 @@ es:
       settings: Configuraciones de compartir
       service_settings: Configuraciones de servicio
       facebook_settings: Configuraciones de Facebook
+      buttons:
+        delicious: Delicious
+        submit_to_reddit:
+        share_on_tumblr:
+        tweet:
       preferences:
         service_button: '%{service} botón'
         facebook_layout: Tipo de botón
