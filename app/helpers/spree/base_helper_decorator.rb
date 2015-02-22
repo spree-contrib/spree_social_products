@@ -1,5 +1,5 @@
 module Spree
-  module SocialHelper
+  BaseHelper.module_eval do
     def pin_it_button(product)
       return if product.images.empty?
 
@@ -17,15 +17,15 @@ module Spree
       escape absolute_image_url(image.attachment.url)
     end
 
+    def absolute_image_url(url)
+      return url if url.starts_with? 'http'
+      request.protocol + request.host + url
+    end
+
     private
 
     def escape(string)
       URI.escape string, /[^#{URI::PATTERN::UNRESERVED}]/
-    end
-
-    def absolute_image_url(url)
-      return url if url.starts_with? 'http'
-      request.protocol + request.host + url
     end
   end
 end
