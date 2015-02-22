@@ -1,15 +1,17 @@
 ---
 en:
   spree:
-    bookmark_or_share_this: "BOOKMARK OR SHARE THIS"
-    social_sharing_buttons: "Social Sharing Settings"
-    social_sharing_buttons_description: "Add social sharing buttons to product pages"
-    social_sharing_settings_description: "Enable or disable sharing to these networks on product pages"
-    social_sharing_settings_updated: "Sharing settings have been successfully updated."
     social:
-      products:
-        facebook_layout: Button type
-        facebook_id: Facebook Api ID
+      bookmark_or_share_this: Bookmark or Share this
+      social_sharing_settings_description: Enable or disable sharing to these networks on product pages
+      social_sharing_settings_updated: Sharing settings have been successfully updated.
+      settings: Social Sharing Settings
+      service_settings: Service Settings
+      facebook_settings: Facebook Settings
+      preferences:
+        service_button: '%{service} Button'
+        facebook_layout: Button Type
+        facebook_app_id: Facebook App ID
         facebook_show_faces: Show Faces Facebook
         facebook_verb_to_display: Verb to Display
         facebook_color_scheme: Color Scheme

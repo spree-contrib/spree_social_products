@@ -1,41 +1,41 @@
 <div id="social_nav">
-  <h6><%= Spree.t(:bookmark_or_share_this) %></h6>
+  <h6><%= Spree.t(:bookmark_or_share_this, scope: :social) %></h6>
   <ul>
-    <% if Spree::Config.twitter_button %>
+    <% if Spree::Social::Config.preferred_twitter_button %>
       <li class="twitter">
-        <%= render partial: 'spree/social/twitter' %>
+        <%= render 'spree/social/twitter' %>
       </li>
     <% end %>
-    <% if Spree::Config.pinterest_button %>
+    <% if Spree::Social::Config.preferred_pinterest_button %>
       <li class="pinterest">
-        <%= render partial: 'spree/social/pinterest' %>
+        <%= render 'spree/social/pinterest' %>
       </li>
     <% end %>
-    <% if Spree::Config.reddit_button %>
+    <% if Spree::Social::Config.preferred_reddit_button %>
       <li class="reddit">
-        <%= render partial: 'spree/social/reddit' %>
+        <%= render 'spree/social/reddit' %>
       </li>
     <% end %>
-    <% if Spree::Config.tumblr_button %>
+    <% if Spree::Social::Config.preferred_tumblr_button %>
       <li class="tumblr">
-        <%= render partial: 'spree/social/tumblr' %>
+        <%= render 'spree/social/tumblr' %>
       </li>
     <% end %>
-    <% if Spree::Config.delicious_button %>
+    <% if Spree::Social::Config.preferred_delicious_button %>
       <li class="delicious">
-        <%= render partial: 'spree/social/delicious' %>
+        <%= render 'spree/social/delicious' %>
       </li>
     <% end %>
-    <% if Spree::Config.gplus_button %>
-      <li class="gplus">
-        <%= render partial: 'spree/social/gplus' %>
+    <% if Spree::Social::Config.preferred_google_plus_button %>
+      <li class="google_plus">
+        <%= render 'spree/social/google_plus' %>
       </li>
     <% end %>
   </ul>
   <ul class="facebook-like-button">
-    <% if Spree::Config.facebook_button %>
+    <% if Spree::Social::Config.preferred_facebook_button %>
       <li class="facebook">
-        <%= render partial: 'spree/social/facebook' %>
+        <%= render 'spree/social/facebook' %>
       </li>
     <% end %>
   </ul>

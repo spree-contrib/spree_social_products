@@ -1,13 +1,16 @@
 ---
 sv:
   spree:
-    bookmark_or_share_this: BOKMÄRK ELLER DELA DETTA
-    social_sharing_buttons: Social delningsinställningar
-    social_sharing_buttons_description: Lägg till sociala dela knappar på produktsidorna
-    social_sharing_settings_description: Aktivera eller inaktivera delning till dessa nätverk på produktsidorna
-    social_sharing_settings_updated: Dela inställningarna har uppdaterats.
     social:
-      products:
+      bookmark_or_share_this: Bokmärk eller dela detta
+      social_sharing_buttons_description: Lägg till sociala dela knappar på produktsidorna
+      social_sharing_settings_description: Aktivera eller inaktivera delning till dessa nätverk på produktsidorna
+      social_sharing_settings_updated: Dela inställningarna har uppdaterats.
+      settings: Sociala delningsinställningar
+      service_settings: Serviceinställningar
+      facebook_settings: Facebookinställningar
+      preferences:
+        service_button: '%{service} knapp'
         facebook_layout: Knapptyp
         facebook_id: Facebook Api ID
         facebook_show_faces: Visa ansikten för Facebook
