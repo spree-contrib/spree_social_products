@@ -38,7 +38,7 @@
 
   initializeFacebookSDK = function() {
     return FB.init({
-      appId: "<%= Spree::Config.facebook_app_id %>",
+      appId: "<%= Spree::Social::Config.preferred_facebook_app_id %>",
       status: true,
       cookie: true,
       xfbml: true

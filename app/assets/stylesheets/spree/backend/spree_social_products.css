@@ -1,21 +1,4 @@
 /*
  *= require spree/backend
+ *= require ./social_share
 */
-
-ul.social_list li {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-ul.social_list label {
-  display: inline;
-  padding: 0 0 0 5px;
-}
-
-ul.social_list img {
-  padding-left: 8px;
-}
-
-#social_actions {
-  clear: both;
-}

@@ -1,0 +1,41 @@
+#social_nav {
+  height: 80px;
+  padding-top: 15px;
+
+  h6 {
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+
+    li {
+      float: left;
+      padding: 5px 0 0 0;
+      margin-right: 10px;
+      list-style-type: none;
+
+      a {
+        padding: 4px 5px 0 0;
+        height: 32px;
+        text-decoration: none;
+        line-height: 1.45em;
+      }
+    }
+  }
+
+  .reddit img {
+    padding-top: 3px;
+  }
+
+  .tumblr-share {
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 81px;
+    height: 20px;
+    background: url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;
+  }
+}

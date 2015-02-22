@@ -1,0 +1,82 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:settings, scope: :social) %>
+<% end %>
+
+<%= form_tag admin_social_settings_path, method: :put do %>
+  <fieldset>
+    <div data-hook="admin_social_method_form_fields">
+      <div class="row">
+        <div class="col-md-6" data-hook="social">
+
+          <fieldset>
+            <legend><%= Spree.t(:service_settings, scope: :social) %></legend>
+            <div class="form-group">
+              <% Spree::Social::Config.social_services.each do |service| -%>
+                <% name = "#{service}_button".to_sym %>
+                <div class="checkbox">
+                  <%= label_tag name do %>
+                    <%= preference_field_tag name, Spree::Social::Config[name], type: :boolean %>
+                    <%= Spree.t(:service_button, scope: [:social, :preferences], service: service.to_s.titleize) %>
+                  <% end %>
+                </div>
+              <%- end %>
+            </div>
+          </fieldset>
+
+        </div>
+
+        <div class="col-md-6" data-hook="facebook">
+
+          <fieldset>
+            <legend><%= Spree.t(:facebook_settings, scope: :social) %></legend>
+
+            <div id="facebook_options">
+              <div class="form-group">
+                <div class="checkbox">
+                  <%= label_tag :facebook_show_faces do %>
+                    <%= preference_field_tag :facebook_show_faces, Spree::Social::Config[:facebook_show_faces], type: :boolean %>
+                    <%= Spree.t :facebook_show_faces, scope: [:social, :preferences] %>
+                  <% end %>
+                </div>
+
+                <div class="checkbox">
+                  <%= label_tag :facebook_send_button do %>
+                    <%= preference_field_tag :facebook_send_button, Spree::Social::Config[:facebook_send_button], type: :boolean %>
+                    <%= Spree.t :facebook_send_button, scope: [:social, :preferences] %>
+                  <% end %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <%= label_tag :facebook_app_id, Spree.t(:facebook_app_id, scope: [:social, :preferences]) %>
+                <%= password_field_tag :facebook_app_id, Spree::Social::Config[:facebook_app_id], class: 'form-control' %>
+              </div>
+
+              <div class="form-group">
+                <%= label_tag :facebook_layout, Spree.t(:facebook_layout, scope: [:social, :preferences]) %>
+                <%= select_tag :facebook_layout, options_for_select(Spree::Social::Config.facebook_layouts, Spree::Social::Config[:facebook_layout]), class: 'select2' %>
+              </div>
+
+              <div class="form-group">
+                <%= label_tag :facebook_verb_to_display, Spree.t(:facebook_verb_to_display, scope: [:social, :preferences]) %>
+                <%= select_tag :facebook_verb_to_display, options_for_select(Spree::Social::Config.facebook_verbs, Spree::Social::Config[:facebook_verb_to_display]), class: 'select2' %>
+              </div>
+
+              <div class="form-group">
+                <%= label_tag :facebook_color_scheme, Spree.t(:facebook_color_scheme, scope: [:social, :preferences]) %>
+                <%= select_tag :facebook_color_scheme, options_for_select(Spree::Social::Config.facebook_color_schemes, Spree::Social::Config[:facebook_color_scheme]), class: 'select2' %>
+              </div>
+            </div>
+
+          </fieldset>
+
+        </div>
+      </div>
+
+      <div class="form-actions" data-hook="buttons">
+        <%= button Spree.t('actions.update'), 'save' %>
+      </div>
+
+    </div>
+  </fieldset>
+<% end %>
