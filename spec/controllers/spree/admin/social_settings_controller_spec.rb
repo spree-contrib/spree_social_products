@@ -20,7 +20,8 @@ RSpec.describe Spree::Admin::SocialSettingsController, type: :controller do
             facebook_show_faces: true
             facebook_verb_to_display: recommend
             facebook_color_scheme: dark
-            facebook_send_button: false' do
+            facebook_send_button: false
+            twitter_id' do
       subject { Spree::Social::Config }
 
       it 'sets twitter_button to false' do
@@ -86,6 +87,11 @@ RSpec.describe Spree::Admin::SocialSettingsController, type: :controller do
       it 'sets facebook_send_button to false' do
         spree_put :update, preferences: { facebook_send_button: false }
         expect(subject.preferred_facebook_send_button).to be(false)
+      end
+
+      it 'sets twitter_id to "123"' do
+        spree_put :update, preferences: { twitter_id: '123' }
+        expect(subject.preferred_twitter_id).to eq('123')
       end
     end
   end

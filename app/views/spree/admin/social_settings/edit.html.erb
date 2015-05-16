@@ -69,7 +69,19 @@
             </div>
 
           </fieldset>
+        </div>
 
+        <div class="col-md-6" data-hook="twitter">
+          <fieldset>
+            <legend><%= Spree.t(:twitter_settings, scope: :social) %></legend>
+
+            <div id="twitter_options">
+              <div class="form-group">
+                <%= label_tag :twitter_id, Spree.t(:twitter_id, scope: [:social, :preferences]) %>
+                <%= text_field_tag :twitter_id, Spree::Social::Config[:twitter_id], class: 'form-control' %>
+              </div>
+            </div>
+          </fieldset>
         </div>
       </div>
 

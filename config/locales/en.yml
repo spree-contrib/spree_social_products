@@ -8,6 +8,7 @@ en:
       settings: Social Sharing Settings
       service_settings: Service Settings
       facebook_settings: Facebook Settings
+      twitter_settings: Twitter Settings
       buttons:
         delicious: Delicious
         submit_to_reddit: Submit to Reddit
@@ -21,3 +22,4 @@ en:
         facebook_verb_to_display: Verb to Display
         facebook_color_scheme: Color Scheme
         facebook_send_button: Share button
+        twitter_id: Twitter ID

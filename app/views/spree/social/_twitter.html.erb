@@ -1,3 +1,17 @@
+<% content_for :head do %>
+  <meta property="twitter:card" content="product" />
+  <% unless Spree::Social::Config.preferred_twitter_id.nil? %>
+    <meta property="twitter:site" content="<%= Spree::Social::Config.preferred_twitter_id %>" />
+  <% end %>
+  <meta property="twitter:title" content="<%= @product.name %>" />
+  <meta property="twitter:description" content="<%= @product.description %>" />
+  <meta property="twitter:image" content="<%= absolute_image_url(@product.images.first.attachment.url) %>" />
+  <% unless @product.price.nil? %>
+    <meta property="twitter:label1" content="<%= Spree.t(:price) %>" />
+    <meta property="twitter:data1" content="<%= @product.price_in(current_currency).money %>" />
+  <% end %>
+<% end %>
+
 <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">
   <%= Spree.t(:tweet, scope: [:social, :buttons]) %>
 </a>
